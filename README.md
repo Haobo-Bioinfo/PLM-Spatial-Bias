@@ -15,7 +15,8 @@ pip install torch transformers datasets umap-learn pandas numpy scikit-learn mat
 ## Quick Start
 For an interactive walkthrough of our findings (including feature entanglement and NLS attention extraction), please refer to the ESM2_Spatial_Bias_Analysis.ipynb located in the notebooks/ directory.
 
-To run the pipeline via command line:
+**To run the pipeline via command line:**
+
 ```bash
 # 1. Preprocess data (assuming CD-HIT output is used as input here)
 python scripts/01_data_preprocessing.py --input_path ./data/02_processed/data_cleaned.csv --output_dir ./data/03_split
