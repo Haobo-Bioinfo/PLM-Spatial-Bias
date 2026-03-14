@@ -17,8 +17,8 @@ For an interactive walkthrough of our findings (including feature entanglement a
 
 To run the pipeline via command line:
 ```bash
-# 1. Preprocess data
-python scripts/01_data_preprocessing.py --input_path ./data/raw_data.csv
+# 1. Preprocess data (assuming CD-HIT output is used as input here)
+python scripts/01_data_preprocessing.py --input_path ./data/02_processed/data_cleaned.csv --output_dir ./data/03_split
 # 2. Fine-tune ESM-2 model
 python scripts/02_model_finetuning.py --epochs 3 --batch_size 16
 ```
