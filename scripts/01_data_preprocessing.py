@@ -10,6 +10,7 @@ import argparse
 import logging
 from sklearn.model_selection import train_test_split
 import re
+import os
 
 # Configure professional logging
 logging.basicConfig(
@@ -94,7 +95,6 @@ def main():
     train_df, val_df, test_df = stratified_partitioning(clean_df, random_state=args.seed)
     
     # Save partitioned datasets
-    import os
     os.makedirs(args.output_dir, exist_ok=True)
     
     train_df.to_csv(f"{args.output_dir}/train.csv", index=False)
